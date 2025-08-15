@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  background-color: #000; /* black navbar */
+  color: #fff; /* white text */
+  padding: 12px 30px;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brand {
+  font-family: pacifico, cursive; /* nice font */
+  letter-spacing: 1px;
+}

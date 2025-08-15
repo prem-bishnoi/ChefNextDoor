@@ -1,0 +1,129 @@
+/* global.css or top-level CSS */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff; /* white background */
+  font-family: 'Inter', sans-serif;
+}
+
+/* Container for whole page */
+.container {
+  display: flex;
+  flex-direction: column; /* so navbar + form stack */
+  align-items: center;
+  justify-content: center;
+  flex: 1;             /* take remaining space */
+  min-height: 100%;    /* stretch to fill screen */
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* Form card */
+.formCard {
+  background-color: #f8f8f8; /* off-white */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #000;  /* black navbar */
+  color: #fff;             /* white text */
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+/* Input fields */
+.inputField {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa; /* off-white */
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Login button */
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #000;  /* black button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #333;
+}
+
+/* Links */
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Bottom consent text */
+.consentText {
+  margin-top: 25px;
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.4;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 15px 30px;
+  }
+
+  .formCard {
+    padding: 30px 20px;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+    font-size: 1.3rem;
+  }
+
+  .linksContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .inputField {
+    font-size: 0.95rem;
+  }
+
+  .loginButton {
+    font-size: 0.95rem;
+  }
+}

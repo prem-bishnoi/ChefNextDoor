@@ -1,0 +1,65 @@
+/* Logo styling */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff; /* White text for black navbar */
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Minimal navbar for auth pages */
+.minimalNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px; /* Reduced height for smaller gap */
+  background-color: #000; /* Black navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 10px; /* Small gap for content below */
+}
+
+/* Full navbar for main pages */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+  background-color: #000; /* Black navbar */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    padding: 0 15px;
+  }
+
+  .links {
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+}
